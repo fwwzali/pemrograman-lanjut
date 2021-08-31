@@ -29,5 +29,5 @@ int main(){
     printf("\nRAM\t\t= %d", brotherComputer->ram_capacity);
     printf("\nHDD\t\t= %d", brotherComputer->hdd_capacity);
 
-}
+}   
 
