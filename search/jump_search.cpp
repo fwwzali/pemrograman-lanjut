@@ -9,7 +9,7 @@ void jumpSearch(int data[], int length, int query)
 
     //mencari block data yang dicari
     int prev = 0;
-
+    int counter = 0;
     while (data[jumper] <= query && jumper < length)
     {
         //proses set ke jump berikutnya
@@ -23,12 +23,19 @@ void jumpSearch(int data[], int length, int query)
         counter++;
     }
 
+    int flag_linear_search = 0;
     for (int i = prev; i <= jumper; i++)
     {
         if (data[i] == query)
         {
+            flag_linear_search = 1;
             printf("data %d ditemukan pada elemen ke-%d", query, i);
         }
+    }
+
+    if (counter == 0 || flag_linear_search == 0)
+    {
+        printf("Data not found!");
     }
 }
 
@@ -39,7 +46,7 @@ int main()
     //mennghitung jumlah array
     int length = sizeof(data) / sizeof(data[0]);
     //set data yang dicari
-    int query = -10;
+    int query = 2000;
 
     //panggil fungsi jump search
     jumpSearch(data, length, query);
