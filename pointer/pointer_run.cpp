@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 void print_data(int i, int j, int *ptr, int **pptr)
 {
@@ -30,4 +31,14 @@ int main()
     //percobaan pointer
     **pptr = 9;
     print_data(i,j,ptr, pptr);
+
+
+    int x = 100;
+    
+    //untuk akses alamat memori
+    //gunakan character '&' sebelum nama variable
+    printf("x berada di slot memori nomor : %d", &x);
+
+    getch();
+
 }
