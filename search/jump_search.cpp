@@ -46,7 +46,7 @@ int main()
     //mennghitung jumlah array
     int length = sizeof(data) / sizeof(data[0]);
     //set data yang dicari
-    int query = 2000;
+    int query = 900;
 
     //panggil fungsi jump search
     jumpSearch(data, length, query);
