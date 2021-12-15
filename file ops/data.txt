@@ -2,3 +2,4 @@ belajar operasi file bahasa C
 di infortmatika UPN Jatim
 semester 3
 sangat menyenangkan
+pagi-pagi ngoding bahasa C
